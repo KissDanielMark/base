@@ -32,7 +32,7 @@ public class TrainControllerImpl implements TrainController {
 	public void setSpeedLimit(int speedLimit) {
 		if(speedLimit > 500)
 		{
-			speedLimit = 150;
+			speedLimit = á;
 		}
 		this.speedLimit = speedLimit;
 		enforceSpeedLimit();
