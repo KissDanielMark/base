@@ -11,7 +11,7 @@ import hu.bme.mit.train.system.TrainSystem;
 
 public class TrainControllerTest {
 
-	TrainController controller;
+	/*TrainController controller;
 	
 	@Before
 	public void before() {
@@ -23,7 +23,7 @@ public class TrainControllerTest {
 	public void MaxSpeedLimit() {
 		controller.setSpeedLimit(600);
 		Assert.assertEquals(120, controller.speedLimit);
-	}
+	}*/
 
 	
 
