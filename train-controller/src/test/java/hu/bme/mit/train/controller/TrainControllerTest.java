@@ -22,7 +22,7 @@ public class TrainControllerTest {
 	@Test
 	public void MaxSpeedLimit() {
 		controller.setSpeedLimit(600);
-		Assert.assertEquals(120, controller.getSpeedLimit());
+		Assert.assertEquals(120, controller.speedLimit);
 	}
 
 	
