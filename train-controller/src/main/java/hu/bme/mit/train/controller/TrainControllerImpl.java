@@ -8,6 +8,11 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 
+	public int getSpeedLimit(){
+
+		return speedLimit;
+	}
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
@@ -32,7 +37,7 @@ public class TrainControllerImpl implements TrainController {
 	public void setSpeedLimit(int speedLimit) {
 		if(speedLimit > 500)
 		{
-			speedLimit = á;
+			speedLimit = 120;
 		}
 		this.speedLimit = speedLimit;
 		enforceSpeedLimit();
