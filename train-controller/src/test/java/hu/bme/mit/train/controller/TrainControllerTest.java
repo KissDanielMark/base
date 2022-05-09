@@ -1,6 +1,6 @@
 package hu.bme.mit.train.controller;
 
-import org.junit.Assert;
+/*import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,9 +23,9 @@ public class TrainControllerTest {
 	public void MaxSpeedLimit() {
 		controller.setSpeedLimit(600);
 		Assert.assertEquals(120, controller.speedLimit);
-	}*/
+	}
 
 	
 
 	
-}
+}*/

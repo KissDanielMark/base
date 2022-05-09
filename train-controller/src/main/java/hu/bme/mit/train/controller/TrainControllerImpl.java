@@ -1,5 +1,10 @@
 package hu.bme.mit.train.controller;
 
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
 import hu.bme.mit.train.interfaces.TrainController;
 
 public class TrainControllerImpl implements TrainController {
@@ -12,6 +17,22 @@ public class TrainControllerImpl implements TrainController {
 
 		return speedLimit;
 	}
+
+	public TrainControllerImpl(){
+		Runnable runRunrun = new Runnable()
+		{
+			public void run(){
+				followSpeed();
+			}
+		};
+		
+		
+		ScheduledExecutorService vegrehajto = Executors.newScheduledThreadPool(1);
+		vegrehajto.scheduleAtFixedRate(runRunrun, 0,1,TimeUnit.SECONDS);
+
+	}	
+
+	
 
 	//proba
 	@Override
