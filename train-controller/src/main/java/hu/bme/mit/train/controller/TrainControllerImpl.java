@@ -13,6 +13,7 @@ public class TrainControllerImpl implements TrainController {
 
 
 	public TrainControllerImpl(){
+		//this timertask is run every second by the timer
 		TimerTask repeatedTask = new TimerTask() {
 			public void run() {
 				followSpeed();
