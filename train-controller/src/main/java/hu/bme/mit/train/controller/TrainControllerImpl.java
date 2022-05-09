@@ -19,7 +19,7 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	public TrainControllerImpl(){
-		Runnable runRunrun = new Runnable()
+		Runnable timerRun = new Runnable()
 		{
 			public void run(){
 				followSpeed();
@@ -28,7 +28,7 @@ public class TrainControllerImpl implements TrainController {
 		
 		
 		ScheduledExecutorService vegrehajto = Executors.newScheduledThreadPool(1);
-		vegrehajto.scheduleAtFixedRate(runRunrun, 0,1,TimeUnit.SECONDS);
+		vegrehajto.scheduleAtFixedRate(timerRun, 0,1,TimeUnit.SECONDS);
 
 	}	
 
